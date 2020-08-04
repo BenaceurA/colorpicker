@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#output {
+position: relative;
+display: block;
+background: white;
+border : 0px solid ;
+border-radius: 50px;
+width:15vw;
+margin: 45vh auto 0;
+font-size: 1rem;
+font-weight: bold;
+text-align: center;
+box-shadow:0px 0px 10px black;
+padding-top: 0.5vh;
+padding-bottom: 0.5vh ;
+transition: ease-in-out 0.25s;
+transition-property: width;
+}
+#output:focus{   
+    outline : none;
+}
+#output:hover{  
+    cursor: pointer;
+    width: 18vw;    
+}
+#rgb{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: transparent;    
+    justify-content: space-between;
+    width: 25%;
+    height:70px;
+    top: 90vh;
+    left:73vw;
+}
+.rgbSlider{
+    width: 80%;
+}
+.test{
+   display: flex; 
+   justify-content: space-between;
+}
+label{
+    font-size: 16px;
+    font-weight: bold;
+}
+@media (max-width :800px){
+    #output{
+        font-size: 0.8rem; 
+        width: 35vw;
+    }
+    #output:hover{  
+        cursor: pointer;
+        width: 35%;   
+    }
+}
